@@ -1,38 +1,47 @@
 <?php
 
-interface Animals {
+interface Animals
+{
     public function run();
 }
 
-interface Birds {
-	public function fly();
+interface Birds
+{
+    public function fly();
 }
 
-interface Cans {
-	public function bark();
+interface Cans
+{
+    public function bark();
 }
 
 
-class Dog implements Animals, Cans {
+class Dog implements Animals, Cans
+{
 
 
-    public function run() {
+    public function run()
+    {
         echo "Dog is running\n";
     }
 
-    public function bark() {
+    public function bark()
+    {
         echo "Dog is barking\n";
     }
 }
 
 
-class Bird implements Animals, Birds {
-    
-    public function run() {
+class Bird implements Animals, Birds
+{
+
+    public function run()
+    {
         echo "Bird is running\n";
     }
-    
-    public function fly() {
+
+    public function fly()
+    {
         echo "Bird is flying\n";
     }
 }
